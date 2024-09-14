@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border {
+
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+        .child {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            float: left;
+        } 
+
+        #hahaid {
+            background-color: red;
+        } 
+
+        .haha .border .child {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="haha" >
+        <div class="border">
+            <div class="child" id="hahaid">
+    
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- <ul>
+        <li>12</li>
+        <li>12</li>
+        <li>12</li>
+        <li>12</li>
+    </ul> -->
+
+    <script>
+        const haha = document.querySelector('.haha');
+        haha.addEventListener('click', () => {
+            sessionStorage.setItem('nowfuck', '2354254');
+            localStorage.setItem('nowfuck', '2354254');
+        })
+    </script>
+</body>
+</html>
