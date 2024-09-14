@@ -97,4 +97,4 @@ let p2 = new Promise((resolve, reject) => {
 const arr2 = Promise.allSettled([p1, p2]).then((res) => {
     console.log(res);
 });
-// console.log(arr2);
+console.log(arr2);
